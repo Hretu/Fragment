@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
-    tools:context="fragments.SecondFragment">
+    tools:context=".ViewPagerActivity">
 
-    <EditText
-        android:id="@+id/etRadius"
+    <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Radius"
-        android:gravity="center"
-        android:layout_margin="10dp"
+        android:id="@+id/tabId"
+        app:tabTextColor="#ffffff"
+        app:tabIndicatorColor="#ffffff"
+        android:background="#1E88E5"
         />
-    <Button
-        android:id="@+id/btnAreaOfCircle"
+    <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Area of Circle"
-        android:layout_margin="10dp"
+        android:id="@+id/viewPager"
         />
 </LinearLayout>

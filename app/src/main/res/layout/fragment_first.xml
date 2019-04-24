@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="400dp"
     android:background="@color/colorAccent"
-    tools:context="fragments.FirstFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_gravity="center"
-        android:gravity="center"
+    tools:context="fragments.FirstFragment"
+    android:orientation="vertical"
+    >
+<EditText
+    android:id="@+id/etFirst"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter first number"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    />
+    <EditText
+        android:id="@+id/etSecond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="welcome to Fragment"
-         />
+        android:hint="Enter second number"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_margin="10dp"
+        />
 
-</FrameLayout>
+
+</LinearLayout>
