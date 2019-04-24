@@ -18,7 +18,6 @@ import fragments.SecondFragment;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         btnFragment = findViewById(R.id.btnFragment);
         btnFragment.setOnClickListener(this);
     }

@@ -7,7 +7,9 @@ import android.os.Bundle;
 
 import adapter.ViewPagerAdapter;
 import fragments.FirstFragment;
+import fragments.FtocFragment;
 import fragments.SecondFragment;
+import fragments.SimpleInterest;
 
 public class ViewPagerActivity extends AppCompatActivity {
 
@@ -26,6 +28,8 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         adapter.addFragment(new FirstFragment(),"Sum");
         adapter.addFragment(new SecondFragment(),"Area of Circle");
+        adapter.addFragment(new FtocFragment(),"FtoC");
+        adapter.addFragment(new SimpleInterest(),"Interest");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
